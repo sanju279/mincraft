@@ -89,51 +89,51 @@ function my_keydown(e)
     }
     if(keyPressed == '87')
     {
-        new_img('wall.jpg');
+        new_image('wall.jpg');
         console.log("w");
     }
     if(keyPressed == '71')
     {
-        new_img('ground.png');
+        new_image('ground.png');
         console.log("g");
     }
     if(keyPressed == '76')
     {
-        new_img('light_green.png');
+        new_image('light_green.png');
         console.log("l");
     }
     if(keyPressed == '84')
     {
-        new_img('trunk.jpg');
+        new_image('trunk.jpg');
         console.log("t");
     }
     if(keyPressed == '82')
     {
-        new_img('roof.jpg');
+        new_image('roof.jpg');
         console.log("r");
     }
     if(keyPressed == '89')
     {
-        new_img('yellow_wall.png');
+        new_image('yellow_wall.png');
         console.log("y");
     }
     if(keyPressed == '68')
     {
-        new_img('dark_green.png');
+        new_image('dark_green.png');
         console.log("d");
     }
     if(keyPressed == '85')
     {
-        new_img('unique.png');
+        new_image('unique.png');
         console.log("u");
     }
     if(keyPressed == '67')
     {
-        new_img('cloud.jpg');
+        new_image('cloud.jpg');
         console.log("c");
     }
 }
-
+}
 function up()
 {
     if(player_y >=0)
@@ -181,4 +181,4 @@ function right()
         player_update();
     }
 }
-}
+
