@@ -133,4 +133,52 @@ function my_keydown(e)
         console.log("c");
     }
 }
+
+function up()
+{
+    if(player_y >=0)
+    {
+        player_y = player_y - block_height;
+        console.log ("block image height =" + block_height);
+        console.log("Whwn Up arrow key is pressed, X =" + player_x + ", Y =" + player_y);
+        canvas.remove(player_object);
+        player_update();
+    }
+}
+
+function down()
+{
+    if(player_y <500)
+    {
+        player_y = player_y + block_height;
+        console.log ("block image height =" + block_height);
+        console.log("Whwn Down arrow key is pressed, X =" + player_x + ", Y =" + player_y);
+        canvas.remove(player_object);
+        player_update();
+    }
+}
+
+function left()
+{
+    if(player_x >=0)
+    {
+        player_x = player_x - block_width;
+        console.log ("block image width =" + block_width);
+        console.log("Whwn Left arrow key is pressed, X =" + player_x + ", Y =" + player_y);
+        canvas.remove(player_object);
+        player_update();
+    }
+}
+
+function right()
+{
+    if(player_x <=850)
+    {
+        player_x = player_x + block_width;
+        console.log ("block image width =" + block_width);
+        console.log("Whwn Right arrow key is pressed, X =" + player_x + ", Y =" + player_y);
+        canvas.remove(player_object);
+        player_update();
+    }
+}
 }
